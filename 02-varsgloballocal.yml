@@ -1,7 +1,7 @@
 - name: Vars Demo
   hosts: all
   vars:
-    URL: variable.demo.global
+    URL: global.variable.com
   tasks:
     - name: Printing Variable name1
       ansible.builtin.debug:
