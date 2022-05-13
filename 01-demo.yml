@@ -1,8 +1,10 @@
--name: demo print
+- name: Play1
   hosts: all
-  vars:
-    var1: demovar
-  tasks: Printing Demo Var Task
-      -ansible.builtin.debug:
-        msg: Printed {{var1}}
+  tasks:
+    - name: Task1 in Play1
+      ansible.builtin.debug:
+          msg: Task1 in Play1
 
+    - name: Task1 in Play1
+      ansible.builtin.debug:
+        msg: Task2 in Play1
