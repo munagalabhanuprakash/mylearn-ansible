@@ -1,7 +1,14 @@
-- name: demo Play
+- name: demo Play1
   hosts: all
   tasks:
     - name: Printing Demo Task
       ansible.builtin.debug:
-       msg: "Demo Message123456"
+       msg: "Demo message from play1"
+
+- name: demo Play2
+  hosts: all
+  tasks:
+    - name: Printing Demo Task
+      ansible.builtin.debug:
+       msg: "Demo message from play2"
 
