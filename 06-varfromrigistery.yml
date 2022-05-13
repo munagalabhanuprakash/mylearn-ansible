@@ -1,0 +1,9 @@
+- name: Var Form Registery1
+  hosts: all
+  task:
+    - name: Saving output to registery
+    ansible.builtin.shell: uptime
+      register: OUT
+    - name: Printing Output
+      ansible.builtin.debug:
+        msg: Printing Output "{{OUT.STDOUT}}"
