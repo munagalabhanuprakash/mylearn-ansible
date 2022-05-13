@@ -1,5 +1,14 @@
-- name: Facts
+- name: Facts1
   hosts: all
+  tasks:
+    - name: Printing Facts
+      ansible.builtin.debug:
+        msg: OS Distribution is {{ansible_distribution}}
+
+- name: Facts2
+  hosts: all
+  vars:
+    ansible_distribution: TEST LOCAL VARIABLE
   tasks:
     - name: Printing Facts
       ansible.builtin.debug:
