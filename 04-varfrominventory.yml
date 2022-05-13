@@ -1,0 +1,6 @@
+- name: Var from inventory
+  hosts: all
+  tasks:
+  - name: Var from Inventory Task
+    ansible.builtin.debug:
+      msg: Printing Inventory variable {{URL}}
