@@ -1,7 +1,5 @@
 - name: demp Play
   hosts: all
-  vars:
-   var1: Test Var
   tasks:
     - name: Printing Demo Var Task
       ansible.builtin.debug:
