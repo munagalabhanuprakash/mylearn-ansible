@@ -1,6 +1,6 @@
 - name: Var Form Registery1
   hosts: all
-  task:
+  tasks:
     - name: Saving output to registery
     ansible.builtin.shell: uptime
       register: OUT
