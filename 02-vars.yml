@@ -1,8 +1,8 @@
 - name: Vars Demo
   hosts: all
   vars:
-  var1: variable1
-  tasks: Printing Variables Task
+    var1: variable1
+  tasks:
     - name: Printing Variable name
     ansible.builtin.debug:
       msg: printing global variable {{var1}}
