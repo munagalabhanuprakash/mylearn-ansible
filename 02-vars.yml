@@ -8,6 +8,6 @@
         msg: printing global variable {{URL}}
 
     - name: Printing Local Variable
-      ansible.buitlin.debug:
+      ansible.builtin.debug:
         msg: printing local variable {{URL}}
         URL: local.variable.com
