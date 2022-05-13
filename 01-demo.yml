@@ -3,5 +3,5 @@
   tasks:
     - name: Printing Demo Var Task
       ansible.builtin.debug:
-        msg: Demo Message
+      msg: Demo Message
 
