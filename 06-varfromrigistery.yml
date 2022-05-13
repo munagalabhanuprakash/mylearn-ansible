@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Saving output to registery
-    ansible.builtin.shell: uptime
+      ansible.builtin.shell: uptime
       register: OUT
     - name: Printing Output
       ansible.builtin.debug:
