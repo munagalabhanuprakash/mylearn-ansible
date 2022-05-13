@@ -1,6 +1,6 @@
 - name: Var From File
   hosts: all
-  vars-file:
+  vars_file:
    - 00-samplevar.yml
   tasks:
     - name: Printing Var form a different file
