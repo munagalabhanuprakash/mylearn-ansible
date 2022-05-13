@@ -1,6 +1,7 @@
--name: demo print
- hosts: all
-  tasks: Printing Demo Var Task
-      -ansible.builtin.debug:
+- name: demo print
+  hosts: all
+  tasks:
+    - name: Printing Demo Var Task
+      ansible.builtin.debug:
         msg: Demo Message
 
