@@ -5,4 +5,4 @@
   tasks:
     - name: Printing Variable name
       ansible.builtin.debug:
-      msg: printing global variable {{var1}}
+        msg: printing global variable {{var1}}
