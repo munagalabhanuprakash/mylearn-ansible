@@ -7,3 +7,6 @@
     - name: Printing Output
       ansible.builtin.debug:
         msg: "{{OUT}}"
+    - name: Printing Output
+      ansible.builtin.debug:
+        msg: "{{OUT.stdout}}"
