@@ -10,5 +10,5 @@
     - name: Printing Local Variable
       ansible.builtin.debug:
         msg: printing local variable {{URL}}
-        vars:
+       vars:
         URL: local.variable.com
