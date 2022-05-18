@@ -1,5 +1,5 @@
  - name: Working from roles directory
    hosts: all
-   become: true
+   become: true # This command executes the file as root user
    roles:
    - sample
