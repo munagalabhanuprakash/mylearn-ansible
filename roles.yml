@@ -1,4 +1,4 @@
-- name: Working from roles directory
-  hosts: all
-  roles:
+ - name: Working from roles directory
+   hosts: all
+   roles:
    - sample
